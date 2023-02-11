@@ -14,8 +14,7 @@ function App() {
   const handleButton = () => {
     {
       Password === Number(theInput) &&
-        (setCount(count + 1),
-        setUserIsOnline(true));
+        (setCount(count + 1), setUserIsOnline(true));
     }
   };
   return (
@@ -24,7 +23,7 @@ function App() {
       <input type="text" value={theInput} onChange={(e) => handleChange(e)} />
       {/* {theInput} */}
       <button onClick={handleButton}>{count}</button>
-      {userIsOnline && <p>Password is correct, You are Online!</p>}
+      {userIsOnline && <p>Password is correct, You are now Online!</p>}
     </div>
   );
 }
